@@ -1,0 +1,45 @@
+[versions]
+activity-compose = "1.7.2"
+agp = "8.2.0-alpha06"
+android-driver = "1.5.5"
+core = "1.10.1"
+coroutines-extensions = "1.5.5"
+gradle-plugin = "1.5.5"
+kotlin = "1.8.0"
+core-ktx = "1.9.0"
+junit = "4.13.2"
+androidx-test-ext-junit = "1.1.5"
+espresso-core = "3.5.1"
+appcompat = "1.6.1"
+kotlinx-datetime = "0.4.0"
+material = "1.9.0"
+mvvm-flow-compose = "0.16.1"
+native-driver = "1.5.5"
+runtime = "1.5.5"
+
+[libraries]
+androidx-activity-compose = { module = "androidx.activity:activity-compose", version.ref = "activity-compose" }
+androidx-core = { module = "androidx.core:core", version.ref = "core" }
+core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "core-ktx" }
+gradle-plugin = { module = "com.squareup.sqldelight:gradle-plugin", version.ref = "gradle-plugin" }
+junit = { group = "junit", name = "junit", version.ref = "junit" }
+androidx-test-ext-junit = { group = "androidx.test.ext", name = "junit", version.ref = "androidx-test-ext-junit" }
+espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espresso-core" }
+appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
+kotlinx-datetime = { module = "org.jetbrains.kotlinx:kotlinx-datetime", version.ref = "kotlinx-datetime" }
+material = { group = "com.google.android.material", name = "material", version.ref = "material" }
+mvvm-compose = { module = "dev.icerock.moko:mvvm-compose", version.ref = "mvvm-flow-compose" }
+mvvm-core = { module = "dev.icerock.moko:mvvm-core", version.ref = "mvvm-flow-compose" }
+mvvm-flow = { module = "dev.icerock.moko:mvvm-flow", version.ref = "mvvm-flow-compose" }
+mvvm-flow-compose = { module = "dev.icerock.moko:mvvm-flow-compose", version.ref = "mvvm-flow-compose" }
+sqldelight-android-driver = { module = "com.squareup.sqldelight:android-driver", version.ref = "android-driver" }
+sqldelight-coroutines-extensions = { module = "com.squareup.sqldelight:coroutines-extensions", version.ref = "coroutines-extensions" }
+sqldelight-native-driver = { module = "com.squareup.sqldelight:native-driver", version.ref = "native-driver" }
+sqldelight-runtime = { module = "com.squareup.sqldelight:runtime", version.ref = "runtime" }
+
+[plugins]
+androidApplication = { id = "com.android.application", version.ref = "agp" }
+kotlinAndroid = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+
+[bundles]
+
